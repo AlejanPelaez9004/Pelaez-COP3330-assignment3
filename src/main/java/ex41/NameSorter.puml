@@ -1,0 +1,19 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class FileHandler
+{
+FileWriter writer
+GetNames()
+PrintOutputToFile()
+}
+
+FileHandler <|-- NameSorter
+FileHandler --|> NameSorter
+
+class NameSorter {
+ArrayList<String> names
+ParseAndSortNames()
+}
+
+@enduml
