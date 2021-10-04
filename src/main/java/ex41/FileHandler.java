@@ -19,6 +19,8 @@ public class FileHandler {
     // Create output file and store sorted names
     public void PrintOutputToFile(ArrayList<String> sortedNames) throws IOException {
         FileWriter writer = new FileWriter("src\\main\\java\\ex41\\exercise41_output.txt");
+        writer.write("Total of " + sortedNames.size() + " names:\n");
+        writer.write("---------------------\n");
         for (String sortedName : sortedNames)
             writer.write(sortedName + "\n");
         writer.close();
