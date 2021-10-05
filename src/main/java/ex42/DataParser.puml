@@ -1,0 +1,29 @@
+@startuml
+
+class DataParser
+{
+AssignArrayLists()
+PrintOutput()
+}
+
+class FileHandler
+{
+GetFile()
+}
+
+FileHandler --|> DataParser
+DataParser <|-- Last
+DataParser <|-- First
+DataParser <|-- Salary
+
+class Last {
+ArrayList<String> last
+}
+class First {
+ArrayList<String> first
+}
+class Salary {
+ArrayList<String> salary
+}
+
+@enduml
