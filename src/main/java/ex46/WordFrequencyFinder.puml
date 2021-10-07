@@ -1,0 +1,15 @@
+@startuml
+
+WordFrequencyFinder <|- InputFile
+
+class WordFrequencyFinder {
+Map<String, Integer> wordCounts
+CountWords(ArrayList<String> words)
+PrintOutput(Map<String, Integer> wordCounts)
+}
+class InputFile
+{
+File input
+}
+
+@enduml
