@@ -1,0 +1,30 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+Product <|-- InputFile
+Root <|- Product
+ProductSearch <|-- Root
+
+class Root {
+public List<Product> products
+}
+class Product
+{
+    private String name;
+    private float price;
+    private int quantity;
+    public String GetName()
+    public float GetPrice()
+    public int GetQuantity()
+}
+class InputFile
+{
+JSON data
+}
+class ProductSearch
+{
+public String PromptUser()
+public String SearchProductByName()
+}
+
+@enduml

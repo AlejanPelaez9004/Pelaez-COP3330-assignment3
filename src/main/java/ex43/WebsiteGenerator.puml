@@ -1,0 +1,20 @@
+@startuml
+FileCreator <|-- WebsiteGenerator
+FileCreator --|> WebsiteGenerator
+
+class WebsiteGenerator {
+String siteName
+String author
+String generateJavaFolder
+String generateCSSFolder
+PromptUser()
+PrintOutput()
+}
+
+class FileCreator
+{
+String folderPath
+Generate()
+}
+
+@enduml
