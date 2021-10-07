@@ -8,13 +8,13 @@ String author
 String generateJavaFolder
 String generateCSSFolder
 PromptUser()
-PrintOutput()
+PrintOutput(String folderPath)
 }
 
 class FileCreator
 {
 String folderPath
-Generate()
+Generate(String siteName, String author, String genJava, String genCSS)
 }
 
 @enduml

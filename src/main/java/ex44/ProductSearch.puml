@@ -24,7 +24,7 @@ JSON data
 class ProductSearch
 {
 public String PromptUser()
-public String SearchProductByName()
+public String SearchProductByName(String searchTerm, Root root)
 }
 
 @enduml
