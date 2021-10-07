@@ -1,0 +1,20 @@
+@startuml
+
+WordFinder <|- InputFile
+OutputFile <|- WordFinder
+
+class WordFinder {
+String outputFileName
+PromptForOutputFileName()
+CreateOutput()
+}
+class InputFile
+{
+File Utilize
+}
+class OutputFile
+{
+File Use
+}
+
+@enduml
